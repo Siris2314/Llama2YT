@@ -1,7 +1,8 @@
 
 
-from langchain.llms import LlamaCpp, CTransformers
-from langchain import PromptTemplate, LLMChain
+from langchain.llms import LlamaCpp
+from langchain.prompts import PromptTemplate
+from langchain.chains import LLMChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import FAISS, Chroma
 from langchain.document_loaders import TextLoader, DirectoryLoader
@@ -37,7 +38,7 @@ else:
 
 callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
 
-llm =  LlamaCpp(model_path="./llama-2-7b-chat.ggmlv3.q8_0.bin", temperature=0.01, n_ctx=4000, verbose=True)
+llm =  LlamaCpp(model_path="./llama-2-7b-chat.Q5_K_S.gguf", temperature=0.01, n_ctx=4000, verbose=True)
 
 
 instruction = "Given the context that has been provided. \n {context}, Answer the following question: \n{question}"

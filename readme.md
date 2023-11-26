@@ -23,7 +23,7 @@ Automated transcripts accompanying YouTube videos often prove inadequate in effe
 
 ### Download a local Llama-2-7b Model for CPU Inference here:
 
-https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
+https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main
 
 Pick any of the models and in llama-2-setup.py and replace it as shown
 

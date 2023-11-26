@@ -1,1 +1,2 @@
-llama-2-7b-chat.ggmlv3.q8_0.bin
+llama-2-7b-chat.Q5_K_S.gguf
+/experimental_topic
